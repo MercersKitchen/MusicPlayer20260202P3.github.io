@@ -13,4 +13,4 @@ float DivY = appHeight * ??? / paperHeight;
 float DivWidth = appWidth * ??? / paperWidth;
 float DivHeight = appHeight * ??? / paperHeight;
 
-//rect( DivX, DivY, DivWidth, DivHeight );
+rect( DivX, DivY, DivWidth, DivHeight );
