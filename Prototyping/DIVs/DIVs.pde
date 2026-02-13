@@ -2,6 +2,9 @@
 */
 //
 
+float DivX = ;
+float DivY = ;
+float DivWidth = ;
+float DivHeight = ;
 
-
-rect();
+rect( DivX, DivY, DivWidth, DivHeight );
