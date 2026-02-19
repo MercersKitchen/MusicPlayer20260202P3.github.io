@@ -2,7 +2,7 @@
  - Count the rect()s you require from your Case Study
  - Copy and Paste this number as rect(DIV), see below
  - Also copy and paste the group-of-4 variables
- - Change the name of all Variables by adding a prefix-type variable
+ - Change the name of all Variables by adding a prefix-type variable, in Camel Casing
  
  - In the future
  - An array will demonstrate a simple alpha-numeric naming system
