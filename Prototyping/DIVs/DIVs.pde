@@ -19,7 +19,7 @@ fullScreen();
 int appWidth = displayWidth;
 int appHeight = displayHeight;
 //
-//Population
+//Population using unitless ratios (i.e. millimeters to pixels)
 int paperWidth = 279; //Best Practice: local variables use to make DIV Variables
 int paperHeight = 216;
 float DivX = appWidth * ??? / paperWidth;
