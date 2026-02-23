@@ -21,7 +21,7 @@ int appHeight = displayHeight;
 //
 //Population using unitless ratios (i.e. millimeters to pixels)
 int paperWidth = 279; //Best Practice: local variables use to make DIV Variables
-int paperHeight = 216;
+int paperHeight = 216; //MrM #'s, students must use their own
 float DivX = appWidth * ??? / paperWidth;
 float DivY = appHeight * ??? / paperHeight;
 float DivWidth = appWidth * ??? / paperWidth;
