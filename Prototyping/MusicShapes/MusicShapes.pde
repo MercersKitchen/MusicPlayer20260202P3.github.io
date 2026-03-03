@@ -20,14 +20,18 @@ int appWidth = displayWidth;
 int appHeight = displayHeight;
 //
 //Population using unitless ratios (i.e. millimeters to pixels)
-int paperWidth = 279; //Best Practice: local variables use to make DIV Variables
-int paperHeight = 216; //MrM #'s, students must use their own
-float DivX = appWidth * ??? / paperWidth;
-float DivY = appHeight * ??? / paperHeight;
-float DivWidth = appWidth * ??? / paperWidth;
-float DivHeight = appHeight * ??? / paperHeight;
+float DivX = appWidth * 1/4;
+float DivY = appHeight * 1/4;
+float DivWidth = appWidth * 1/2;
+float DivHeight = appHeight * 1/2;
+//
+float stopSymbolDivX = DivX + DivWidth*1/4;
+float stopSymbolDivY = DivY +  DivHeight*1/4;
+float stopSymbolDivWidth = DivWidth*1/2;
+float stopSymbolivHeight = DivHeight*1/2;
 //
 //DIVs
 //rect( DivX, DivY, DivWidth, DivHeight );
-rect( songTitleDivX, songTitleDDivY, songTitleDDivWidth, songTitleDDivHeight );
+rect( DivX, DivY, DivWidth, DivHeight );
 //
+rect( stopSymbolDivX, stopSymbolDivY, stopSymbolDivWidth, stopSymbolivHeight );
