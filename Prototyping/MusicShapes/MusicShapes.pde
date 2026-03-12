@@ -35,6 +35,10 @@ float playSymbolDivY4 = DivY +  DivHeight*1/2;
 float playSymbolDivX5 = DivX + DivWidth*1/4;
 float playSymbolDivY6 = DivY +  DivHeight*3/4;
 //
+float muteSymbolDivX = DivX + DivWidth*1/4;
+float muteSymbolDivY = DivY +  DivHeight*1/4;
+float muteSymbolDivWidth = DivWidth*1/2;
+float muteSymbolivHeight = DivHeight*1/2;
 float muteSymbolDivX1 = DivX + DivWidth*1/4;
 float muteSymbolDivY2 = DivY +  DivHeight*1/4;
 float muteSymbolDivX3 = DivX + DivWidth*3/4;
@@ -43,6 +47,9 @@ float muteSymbolDivY4 = DivY +  DivHeight*3/4;
 //rect( DivX, DivY, DivWidth, DivHeight );
 rect( DivX, DivY, DivWidth, DivHeight );
 //
-//rect( stopSymbolDivX, stopSymbolDivY, stopSymbolDivWidth, stopSymbolivHeight );
-triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6);
-//line( muteSymbolDivX1, muteSymbolDivY2, muteSymbolDivX3, muteSymbolDivY4 );
+rect( stopSymbolDivX, stopSymbolDivY, stopSymbolDivWidth, stopSymbolivHeight );
+//
+//triangle( playSymbolDivX1, playSymbolDivY2, playSymbolDivX3, playSymbolDivY4, playSymbolDivX5, playSymbolDivY6);
+//
+rect( muteSymbolDivX, muteSymbolDivY, muteSymbolDivWidth, muteSymbolivHeight );
+line( muteSymbolDivX1, muteSymbolDivY2, muteSymbolDivX3, muteSymbolDivY4 );
