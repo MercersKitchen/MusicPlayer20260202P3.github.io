@@ -4,12 +4,13 @@
 //Display
 fullScreen();
 //
+String[] imageName = new String[3];
 String upArow = "..";
 String dependanciesFolder = "Dependencies";
 String imagesFolder = "Images";
-String imageName1 = "Mona-Lisa-67-805x1200";
-String imageName2 = "bike";
-String imageName3 = "SoccerBall";
+imageName[1] = "Mona-Lisa-67-805x1200";
+imageName[2] = "bike";
+imageName[3] = "SoccerBall";
 String fileExension = ".jpg";
 String open = "/";
 
@@ -21,17 +22,15 @@ String imageDirectory = upArow + open + upArow + open + dependanciesFolder + ope
 String[] pathway = new String[3];
 //
 //Loading Images
-PImage image1, image2, image3;
-for ( int i=1; i<=3; i++ ) {
+PImage[] image = new PImage[3];
+for ( int i=1; i<=pathway.length; i++ ) {
   pathway[i] = imageDirectory + imageName[i] + fileExension;
-  image[i] = loadImage( pathway[1] );
+  image[i] = loadImage( pathway[i] );
 }
 //
 //Drawing Images
-for ( int i=1; i<=3; i++ ) {
-  image(image1, 0, 0);
-  image(image2, 0, 0);
-  image(image3, 0, 0);
+for ( int i=1; i<=pathway.length; i++ ) {
+  image(image[i], 0, 0);
 }
 //
 //End
