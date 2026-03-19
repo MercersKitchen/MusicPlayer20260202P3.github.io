@@ -40,13 +40,16 @@ float imageDivWidth = appWidth*1/2 - beginningButtonSpace*1.5;
 float imageDivHeight = appHeight*1.5/5; //1+1.5=2.5, half of the total height
 
 //Image: Aspect Ratio Algorithm
-//Ternary Operator for As[pect Ratio
-
-
-
+//println( float(imageWidth2)/ float(imageHeight2) );
+//Ternary Operator for As[pect Ratio: Q: greatOne v lessOne
+float image2AspectRation_GreatOne = ( imageWidth2 > imageHeight2 ) ? float(imageWidth2) / float(imageHeight2) : float(imageHeight2) / float(imageWidth2 ) ;
+println(image2AspectRation_GreatOne);
+float imageWidthAdjusted2 = imageDivWidth;
+float imageHeightAdjusted1 = ( imageWidth2 >= imageDivWidth ) ? imageWidthAdjusted2 / image2AspectRation_GreatOne : imageWidthAdjusted2 * image2AspectRation_GreatOne ;
+//
 //DIV: Image
 rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
 //
-image(image1, 0, 0);
-//image(image2, imageDivX, imageDivY, imageDivWidth+1, imageDivHeight);
+//image(image1, 0, 0);
+image(image2, imageDivX, imageDivY, imageWidthAdjusted2, imageHeightAdjusted1);
 //image(image3, 0, 0);
