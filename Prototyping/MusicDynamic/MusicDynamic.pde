@@ -20,6 +20,8 @@ AudioMetaData[] playListMetaData = new AudioMetaData[ numberOfSongs ];
 AudioPlayer[] soundEffects = new AudioPlayer[ numberOfSoundEffect ];
 int currentSong = numberOfSongs - numberOfSongs; //ZERO, Math Property
 //
+float songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight;
+  //
 void setup() {
   //Display
   size( 700, 500 ); //width //height
@@ -35,10 +37,10 @@ void setup() {
   float quitY = 0;
   float quitWidth = appHeight*1/20;
   float quitHeight = appHeight*1/20;
-  float songTitleDivX = beginningButtonSpace;
-  float songTitleDivY = appHeight*1.5/20;
-  float songTitleDivWidth = appWidth*1/2 - beginningButtonSpace*1.5;
-  float songTitleDivHeight = appHeight*1/10;
+  songTitleDivX = beginningButtonSpace;
+  songTitleDivY = appHeight*1.5/20;
+  songTitleDivWidth = appWidth*1/2 - beginningButtonSpace*1.5;
+  songTitleDivHeight = appHeight*1/10;
   float messageDIV_X = appWidth*1/2 + beginningButtonSpace*1/2;
   float messageDIV_Y = appHeight*1.5/20;
   float messageDIV_Width = appWidth*1/2 - beginningButtonSpace*1.5;
@@ -160,15 +162,14 @@ void setup() {
   }
   text( playListMetaData[currentSong].title(), songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
   //
-  
-  
-  
+  //playList[currentSong].play();
+  //soundEffects[currentSong].play();
   //
 }//End Setup
 //
 void draw() {
-  playList[currentSong].play();
-  //soundEffects[currentSong].play();
+  rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
+
 }//End Draw
 //
 void mousePressed() {
