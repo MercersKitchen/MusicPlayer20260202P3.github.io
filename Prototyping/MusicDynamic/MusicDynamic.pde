@@ -173,7 +173,7 @@ void draw() {
   rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
   fill(purpleInk);
   text( playListMetaData[currentSong].title(), songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
-  fill(resetInk);
+  fill(#FFFFFF); //resetInk
 }//End Draw
 //
 void mousePressed() {
