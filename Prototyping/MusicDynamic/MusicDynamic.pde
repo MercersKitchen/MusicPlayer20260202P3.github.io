@@ -21,7 +21,7 @@ AudioPlayer[] soundEffects = new AudioPlayer[ numberOfSoundEffect ];
 int currentSong = numberOfSongs - numberOfSongs; //ZERO, Math Property
 //
 float songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight;
-color purpleInk;
+color purpleInk, resetInk;
 //
 void setup() {
   //Display
