@@ -22,6 +22,10 @@ int currentSong = numberOfSongs - numberOfSongs; //ZERO, Math Property
 //
 float songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight;
 color purpleInk, resetInk;
+float constantDecrease;
+int iWhile;
+float fontSize1, fontSize2, fontSize3;
+PFont font; 
 //
 void setup() {
   //Display
@@ -131,17 +135,17 @@ void setup() {
   //
   // Fonts from OS
   //rect(height) is biggest font is word is the smallest
-  float fontSize1 = songTitleDivHeight; //1:1 Font Height to rectHeight
-  float fontSize2 = messageDIV_Height;
-  float fontSize3 = quitHeight;
-  PFont font; //Font Varaible Name, able to have more than one Font
+  fontSize1 = songTitleDivHeight; //1:1 Font Height to rectHeight
+  fontSize2 = messageDIV_Height;
+  fontSize3 = quitHeight;
+  //PFont font; //Font Varaible Name, able to have more than one Font
   String harrington = "Harrington"; //Spelling of the Font Matters, see PFont.list() v Create Font above
   font = createFont(harrington, fontSize1);
   //
   //Drawing Text
   purpleInk = #2C08FF; //AP MiniLesson on bit, 8-bit or byte (grey scale, 256), colour
   color whiteInk = #FFFFFF; //Grey Scale is 255
-  color resetInk = whiteInk;
+  resetInk = whiteInk;
   fill(purpleInk); //Ink, hexidecimal copied from Color Selector
   //Grey Scale 0-255
   textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
@@ -171,9 +175,22 @@ void setup() {
 //
 void draw() {
   rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
+  constantDecrease = 0.99;
+  iWhile=0;
+  textFont(font, fontSize1); //must include textSize() before text() & textWidth()
+  while ( textWidth(playListMetaData[currentSong].title()) > songTitleDivWidth ) {
+    //println("While #1"); //Infinite WHILE Check
+    iWhile++;
+    if ( iWhile>10000 ) { //>1000 means -1 text or i
+      println("Infninte WHILE Loop");
+      exit();
+    }
+    fontSize1 *= constantDecrease;
+    textFont(font, fontSize1);
+  }
   fill(purpleInk);
   text( playListMetaData[currentSong].title(), songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
-  fill(#FFFFFF); //resetInk
+  fill(resetInk); //
 }//End Draw
 //
 void mousePressed() {
