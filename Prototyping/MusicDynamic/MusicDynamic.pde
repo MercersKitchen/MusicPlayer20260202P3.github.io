@@ -21,7 +21,8 @@ AudioPlayer[] soundEffects = new AudioPlayer[ numberOfSoundEffect ];
 int currentSong = numberOfSongs - numberOfSongs; //ZERO, Math Property
 //
 float songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight;
-  //
+color purpleInk;
+//
 void setup() {
   //Display
   size( 700, 500 ); //width //height
@@ -138,7 +139,7 @@ void setup() {
   font = createFont(harrington, fontSize1);
   //
   //Drawing Text
-  color purpleInk = #2C08FF; //AP MiniLesson on bit, 8-bit or byte (grey scale, 256), colour
+  purpleInk = #2C08FF; //AP MiniLesson on bit, 8-bit or byte (grey scale, 256), colour
   color whiteInk = #FFFFFF; //Grey Scale is 255
   color resetInk = whiteInk;
   fill(purpleInk); //Ink, hexidecimal copied from Color Selector
@@ -161,6 +162,7 @@ void setup() {
     textFont(font, fontSize1);
   }
   text( playListMetaData[currentSong].title(), songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
+  fill(resetInk);
   //
   //playList[currentSong].play();
   //soundEffects[currentSong].play();
@@ -169,7 +171,9 @@ void setup() {
 //
 void draw() {
   rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
-
+  fill(purpleInk);
+  text( playListMetaData[currentSong].title(), songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
+  fill(resetInk);
 }//End Draw
 //
 void mousePressed() {
