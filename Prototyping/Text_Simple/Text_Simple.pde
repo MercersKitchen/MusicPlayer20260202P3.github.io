@@ -61,7 +61,7 @@ color whiteInk = #FFFFFF; //Grey Scale is 255
 color resetInk = whiteInk;
 fill(purpleInk); //Ink, hexidecimal copied from Color Selector
 //Grey Scale 0-255
-textAlign (CENTER, TOP); //Align X&Y, see Processing.org / Reference
+textAlign (CENTER, CENTER); //Align X&Y, see Processing.org / Reference
 //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
 //
 // Procedure Passing RECT(#2) && fontSize(RECT#)
