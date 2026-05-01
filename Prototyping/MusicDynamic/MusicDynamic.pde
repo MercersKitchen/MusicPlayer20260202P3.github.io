@@ -175,6 +175,7 @@ void setup() {
 //
 void draw() {
   rect(songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight);
+  fontSize1 = songTitleDivHeight;
   constantDecrease = 0.99;
   iWhile=0;
   textFont(font, fontSize1); //must include textSize() before text() & textWidth()
