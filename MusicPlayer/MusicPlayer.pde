@@ -1,1 +1,2 @@
-//Test
+/* Music App, Final Project
+*/
