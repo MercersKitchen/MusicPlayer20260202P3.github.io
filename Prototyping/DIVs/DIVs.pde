@@ -29,7 +29,7 @@ float DivHeight = appHeight * ??? / paperHeight;
 //
 //DIVs
 //rect( DivX, DivY, DivWidth, DivHeight );
-rect( songTitleDivX, songTitleDDivY, songTitleDDivWidth, songTitleDDivHeight );
+rect( songTitleDivX, songTitleDDivY, songTitleDDivWidth, songTitleDivHeight );
 rect( DivX, DivY, DivWidth, DivHeight ); //Copy and Paste, rename variables
 rect( DivX, DivY, DivWidth, DivHeight );
 rect( DivX, DivY, DivWidth, DivHeight );
