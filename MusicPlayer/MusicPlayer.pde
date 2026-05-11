@@ -9,7 +9,10 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 //
-//Global Variables
+/* Global Variables
+ - Possible DIV-vars needed in draw(), etc.
+ - MUST: Music Button-vars, possibliy associated DIV-vars
+ */
 //
 void setup() {
   //Display
@@ -26,6 +29,8 @@ void setup() {
   float DivY = appHeight * ??? / paperHeight;
   float DivWidth = appWidth * ??? / paperWidth;
   float DivHeight = appHeight * ??? / paperHeight;
+  //
+  //2D Music Symbol Variables
   //
   //DIVs
   //rect( DivX, DivY, DivWidth, DivHeight ); //See Case Study
