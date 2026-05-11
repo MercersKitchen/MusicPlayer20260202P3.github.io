@@ -25,16 +25,16 @@ void setup() {
   //See Case Study
   int paperWidth = 279; //Best Practice: local variables use to make DIV Variables
   int paperHeight = 216; //MrM #'s, students must use their own
-  float DivX = appWidth * ??? / paperWidth;
-  float DivY = appHeight * ??? / paperHeight;
-  float DivWidth = appWidth * ??? / paperWidth;
-  float DivHeight = appHeight * ??? / paperHeight;
+  //float DivX = appWidth * ??? / paperWidth;
+  //float DivY = appHeight * ??? / paperHeight;
+  //float DivWidth = appWidth * ??? / paperWidth;
+  //float DivHeight = appHeight * ??? / paperHeight;
   //
   //2D Music Symbol Variables
   //
   //DIVs
   //rect( DivX, DivY, DivWidth, DivHeight ); //See Case Study
-  rect( songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
+  //rect( songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
   //
   //2D music Symbol Shapes, 2D shapes needed to draw
   //
