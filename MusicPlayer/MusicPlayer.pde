@@ -11,7 +11,7 @@ import ddf.minim.ugens.*;
 //
 /* Global Variables
  - Possible DIV-vars needed in draw(), etc.
- - MUST: Music Button-vars, possibliy associated DIV-vars
+ - MUST: Music Button-vars, possibly associated DIV-vars
  */
 //
 void setup() {
@@ -36,14 +36,16 @@ void setup() {
   //rect( DivX, DivY, DivWidth, DivHeight ); //See Case Study
   rect( songTitleDivX, songTitleDDivY, songTitleDDivWidth, songTitleDivHeight );
   //
-  //@23D music Symbol Shapes
+  //2D music Symbol Shapes, 2D shapes needed to draw
   //
 }//End Setup
 //
 void draw() {
+  //2D Music Symbol Changes: hoverover, activation. Boolean from mousePressed()
 }//End Draw
 //
 void mousePressed() {
+  //2D Music Symbol Changes: sending Boolean to draw()
 }//End Mouse Pressed
 //
 void keyPressed() {
