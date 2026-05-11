@@ -34,7 +34,7 @@ void setup() {
   //
   //DIVs
   //rect( DivX, DivY, DivWidth, DivHeight ); //See Case Study
-  rect( songTitleDivX, songTitleDDivY, songTitleDDivWidth, songTitleDivHeight );
+  rect( songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
   //
   //2D music Symbol Shapes, 2D shapes needed to draw
   //
