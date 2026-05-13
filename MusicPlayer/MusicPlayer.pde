@@ -32,11 +32,19 @@ void setup() {
   //
   //2D Music Symbol Variables
   //
+  //Directory or Pathway to Images
+  //String-Vars of Folders and File Names
+  //Concatenation of Pathways
+  //PImage Vars + Diensions (width & height)
+  //
   //DIVs
   //rect( DivX, DivY, DivWidth, DivHeight ); //See Case Study
   //rect( songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
   //
   //2D music Symbol Shapes, 2D shapes needed to draw
+  //
+  //Images & Aspoect Ratio Algoritrhm, including WHILE Loop
+  //image();
   //
 }//End Setup
 //
