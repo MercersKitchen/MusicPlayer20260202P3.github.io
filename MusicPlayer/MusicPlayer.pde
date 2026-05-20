@@ -1,7 +1,7 @@
 /* Music App, Final Project
  */
 //
-//Minim Library
+//Minim Library - Do not copy, only add through File / Sketch
 import ddf.minim.*;
 import ddf.minim.analysis.*;
 import ddf.minim.effects.*;
@@ -30,6 +30,12 @@ void setup() {
   //float DivWidth = appWidth * ??? / paperWidth;
   //float DivHeight = appHeight * ??? / paperHeight;
   //
+  //Text Setup, includes text & font variables
+  //
+  //Literal Text ... String Variables
+  //
+  //Font Size Variables, corrleated with DIV-Height Variables
+  //
   //2D Music Symbol Variables
   //
   //Directory or Pathway to Images
@@ -42,6 +48,12 @@ void setup() {
   //rect( songTitleDivX, songTitleDivY, songTitleDivWidth, songTitleDivHeight );
   //
   //2D music Symbol Shapes, 2D shapes needed to draw
+  //
+  //Drawing Text - Formatting Text Functions & Ink Variables
+  //
+  //Drawing Text - Font Size Adustement (WHILE Loop)
+  //
+  //Draw Text with adjusted DIV Variables
   //
   //Images & Aspoect Ratio Algoritrhm, including WHILE Loop
   //image();
