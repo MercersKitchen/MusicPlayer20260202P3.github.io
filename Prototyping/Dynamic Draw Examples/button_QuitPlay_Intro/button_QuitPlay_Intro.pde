@@ -44,6 +44,8 @@ void setup() {
   //DIVs
   rect(quitDivX, quitDivY, quitDivWidth, quitDivHeight);
   rect(playDivX, playDivY, playDivWidth, playDivHeight);
+  //
+  //Music Symbol Shape
   triangle(playSymbolX1, playSymbolY1, playSymbolX2, playSymbolY2, playSymbolX3, playSymbolY3);
 } //End setup
 //
